@@ -7,10 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & build
 node_modules
 dist
 dist-ssr
 *.local
+
+# 环境变量（保留 .env.example）
+.env
+.env.*.local
+
+# 自动生成的类型声明（unplugin 自动生成）
+src/types/auto-imports.d.ts
+src/types/components.d.ts
+
+# vue-tsc 增量构建缓存
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
